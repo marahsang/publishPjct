@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Project Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Project Portfolio</h1>
+    <button id="addProjectBtn">Add New Project</button>
+
+    <!-- Hidden Form to Add Projects -->
+    <form id="projectForm" style="display: none;">
+      <input type="text" id="projectName" placeholder="Project Name" required />
+      <input type="url" id="sourceCode" placeholder="Source Code URL" required />
+      <input type="url" id="livePreview" placeholder="Live Preview URL" required />
+      <button type="submit">Add Project</button>
+    </form>
+
+    <!-- Section to Display Projects -->
+    <div id="projectList">
+      <!-- Projects will be added here dynamically -->
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
